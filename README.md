@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+Shopping Cart Application
+This Shopping Cart Application is a React-based web application that allows users to add products to a cart, view a summary of the cart, and simulate a checkout process. It integrates with a Strapi API to fetch products and manage inventory, ensuring a dynamic and responsive user experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Product Listing: Displays a list of products fetched from a Strapi API with images, names, costs, and stock information.
+Dynamic Cart: Users can add products to their cart. The cart updates in real-time, showing the added items, quantities, and the total cost.
+Checkout Summary: A dedicated checkout section provides a summary of the cart items and the total amount to be paid.
+Restock Functionality: Includes a feature to restock products by fetching updated inventory data from the Strapi API.
+Responsive Design: Adapts to various screen sizes for an optimal viewing experience across devices.
+Technology Stack
+React: For building the user interface.
+Strapi: As the backend API for managing and fetching products.
+Bootstrap/Custom CSS: For styling the application.
+Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Available Scripts
+Prerequisites
+Node.js and npm (Node Package Manager)
+A running instance of Strapi API with products configured
 
-In the project directory, you can run:
+Installation
 
-### `npm start`
+Clone the repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+git clone https://github.com/coindustry/super-cart.git
+cd shopping-cart-application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install the dependencies
 
-### `npm test`
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Set up the environment variables
+Create a .env file in the root directory and add the following:
 
-### `npm run build`
+REACT_APP_API_URL=http://localhost:1337/api/products
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Replace the URL with your Strapi API endpoint.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run the application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
 
-### `npm run eject`
+This will start the application on http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Usage
+Browse through the list of available products.
+Click on "Add to Cart" to add a product to your cart.
+View your cart and remove items if necessary.
+Click "Checkout" to simulate the checkout process.
+Use the "Restock Products" button to fetch and update the inventory.
+Contributing
+Contributions are welcome! Please feel free to submit a pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
